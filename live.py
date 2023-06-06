@@ -87,3 +87,28 @@ jk >> play (" |n2|", amp=4)
 
 
 Clock.bpm=128
+
+
+
+# chicx Residual 
+
+
+
+var.switch = var([1,1],[32])
+
+
+p8 >> glass(oct=6, rate=linvar([-2,2],16), shape=0.5, amp=0, amplify=var([1,var.switch],64), room=0.5)
+
+
+
+b1 >> dirt ([0,0,0.5], dur=PDur(3,8), sus=1, chop=0, drive=0.5, formant=1, oct=(5), room=0.2, amp=1)
+
+p3 >> pasha (var([0,2,0.5],[3,1/2,1/2]), dur=PDur(5,8), amp=1, oct=6, sus=2, pan=PWhite(-1,1)).every(4, "dur.shuffle")
+
+up >> play ("|x4| ", dur=PDur(4,8),amp=1)
+
+c1 >> play("#", rate=-1/2, hpf=1000, dur=4, amp=4, room=1, coarse=16).spread()
+
+c2 >> play (" |o2|", dur=2/2, amp=.5)
+
+
