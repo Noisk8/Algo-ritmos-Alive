@@ -9,7 +9,7 @@
 ## Video animations made with stabledifussion 
 
 ~~~
-mplayer -fs -loop 0 algorave.mp4
+ mplayer -fs -loop 0 -nosound algorave.mp4
 ~~~
 
 ## Sound made wit Foxdot 
