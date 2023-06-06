@@ -127,4 +127,18 @@ h4 >> play (" |o2|", dur=2/2, amp=.6)
 t3 >> play("*-...[----]..*-...[nnnn]..", sample=2, amp=2)
 
 
+### NR TRACK 
+cc >> play ("|m0|        ", dur=8).stop()
+
+c2 >> play ("|m3|       ", dur=8, amp=2).solo()
+
+ty >> play ("|x4| ", amp=1)
+ye >> pluck (dur=PDur(8,8), oct=[6,6,6,6,5,5,5,5,6,5,5,5,5,5,6,6,7], vib=0, amp=.5)
+er >> pasha (oct=[4,4,4,4,5], dur=PDur(8,8), vib=2, amp=.7 )
+hu >> play (" |M0|   ", dur=PDur(4,8), amp=1.2)
+us >> play ("|e1|", dur=PDur(5,8)).stop()
+ko >> play ("[::]", amp=[2,2,2,2,1,1,1,1,1,.3,.4,.6,.7])
+ji >> play (" |o3|", dur=2/2, amp=.5)
+
+t2 >> bass (amp=1, dur=PDur(4,8) )
 
