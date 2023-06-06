@@ -112,3 +112,23 @@ c1 >> play("#", rate=-1/2, hpf=1000, dur=4, amp=4, room=1, coarse=16).spread()
 c2 >> play (" |o2|", dur=2/2, amp=.5)
 
 
+
+
+# Track 4 
+
+#telefono
+b3 >> play("{b[bb] }", amp=[1,1,1,1,0,0,0,00,0,0,0,0,0,0,0,])
+
+t6 >> dirt(dur=PDur(7,8))
+
+sw >> saw(P[var([-2, -3, -1, 0, 1, 2], 16), var([0, 1, 2, 3, 4], 32), var([3, 0], 8), 4, 0.5, 0.75], oct=5, dur=0.25, hpf=P[[800, 500], [200, 250, 300, 350], var([400, 200]), 900, var([350, 800], 8), 400, 500, 300], hpr=expvar([0.25, 1], 1/3), drive=0.15, amp=expvar([0.15, 1], 4) * var([1, .4], [28, 4]))
+
+
+hr >> play ("|x4| ", amp=1.2, dur=PDur(4,8))
+
+h4 >> play (" |o2|", dur=2/2, amp=.6)
+
+t3 >> play("*-...[----]..*-...[nnnn]..", sample=2, amp=2)
+
+
+
