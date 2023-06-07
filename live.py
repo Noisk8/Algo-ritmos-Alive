@@ -9,11 +9,15 @@ d2 >> play("|x4|-", sample=2, amp=1.3).sometimes("stutter", 4, dur=3)
 
 d3 >> play("  I ", sample=1, hpf=(0,2000), lpf=(300,0), hpr=0.5)
 
-b1 >> dbass(var([0,6,5,2],[6,2]), dur=PDur(3,8,[0,2]), sus=2, chop=4, rate=4)
+b1 >> dbass(var([0,6,5,2],[6,2]), dur=PDur(3,8,[0,2]), sus=2, chop=2, rate=1, amp=1)
 
-p2 >> blip([0,1,[[3,4],2]], dur=[4,3,1], amp=.4, drive=PWhite(0.2,0.7), oct=5, lpf=2000, room=1/2, echo=0.75, echotime=6, sus=1).penta().spread()
+p2 >> pasha([0,1,[[3,4],2]], dur=[4,3,1], amp=0, drive=PWhite(0.2,0.7), oct=linvar([4,5]), lpf=2000, room=1/2, echo=0.75, echotime=6, sus=1).penta().spread()
 
 k1 >> klank(oct=6, lpf=0, lpr=0.5, amp=0)
+
+ji >> play (" |o3|", dur=2/2, amp=0.5)
+
+ju >> play ("[::]", amp=1)
 
 
 
