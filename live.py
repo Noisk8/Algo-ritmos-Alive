@@ -142,3 +142,27 @@ ji >> play (" |o3|", dur=2/2, amp=.5)
 
 t2 >> bass (amp=1, dur=PDur(4,8) )
 
+
+#TRACK Ñ
+
+
+bh >> play ("|m0|           ", dur=8, amp=2)
+
+
+ll >> dbass (dur=PDur(1,8)*(1,2), echo=.5  ,shape=var([1,0.15],[28,2]), amp=.4, oct=5)
+ju >> dirt (dur=PDur(3,8), amp=1, root=var([0,1]))
+j5 >>play("F ", sample=4, chop=0,dur=PDur(1,8),amp=0,
+     vib=0,vibdepth=0)
+g2 >> arpy (amp=linvar([1,.3]), oct=5, dur=PDur(7,8), 
+    sus=var([10,50]),
+     chop=0, hpf=var([22, 4000]))
+j2 >> play ("|x4| ", amp=1)
+kk >>  play (" |n2|", amp=0)
+jp >> play (" |=1|", amp=0, chop=0, dur=1)
+nh >> play (" [::]", amp=3)
+nl >> play (" |o2|", dur=2/2, amp=.0, mix=0, room=0)
+nm >> play ("tre", dur=PDur(3,8), amp=1.5)
+
+
+
+
