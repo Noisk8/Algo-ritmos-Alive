@@ -1,3 +1,24 @@
+bh >> play ("|m1|           ", dur=8, amp=2)
+
+
+
+Scale.default="minor"; Clock.bpm=125
+d1 >> play("G(:-)", rate=-1/2, pshift=var([0,3],[6,2])+(0.1,0), pan=(-1,1), room=1, amp=0)
+
+d2 >> play("|x4|-", sample=2, amp=1.3).sometimes("stutter", 4, dur=3)
+
+d3 >> play("  I ", sample=1, hpf=(0,2000), lpf=(300,0), hpr=0.5)
+
+b1 >> dbass(var([0,6,5,2],[6,2]), dur=PDur(3,8,[0,2]), sus=2, chop=4, rate=4)
+
+p2 >> blip([0,1,[[3,4],2]], dur=[4,3,1], amp=.4, drive=PWhite(0.2,0.7), oct=5, lpf=2000, room=1/2, echo=0.75, echotime=6, sus=1).penta().spread()
+
+k1 >> klank(oct=6, lpf=0, lpr=0.5, amp=0)
+
+
+
+# TRACK 2 
+
 
 cyberguenza = [4,0,0,2,0,13,4,17,0,5,16,0,6,18,0,7]
 s1 >> pluck (
