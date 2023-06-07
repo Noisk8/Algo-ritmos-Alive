@@ -12,4 +12,20 @@
  mplayer -fs -loop 0 -nosound algorave.mp4
 ~~~
 
-## Sound made wit Foxdot 
+## Sound made with Foxdot 
+
+
+~~~
+Alteración de los samples de la carpeta m/lower por los samples del repo/
+~~~
+
+borarr los samples existentes
+~~~
+sudo rm /usr/local/lib/python3.10/dist-packes/FoxDot/snd/m/lower/*
+~~~
+
+ingresrar samples del repo 
+
+~~~
+sudo cp  /samples/* /usr/local/lib/python3.10/dist-packes/FoxDot/snd/m/lower/
+~~~
